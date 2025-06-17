@@ -20,7 +20,6 @@ body {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    padding-top: 130px; /* Position text from the top */
     box-sizing: border-box; /* Include padding in height calculation */
 }
 
@@ -31,10 +30,7 @@ body {
 
 
 .loading-text {
-    font-size: 3rem;
-    color: #000000; /* Black text to match the image */
-    text-shadow: none; /* Remove previous shadow */
-    animation: flicker 2s infinite alternate;
+    display: none;
 }
 
 @keyframes flicker {
