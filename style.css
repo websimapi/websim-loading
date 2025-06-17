@@ -13,18 +13,5 @@ body {
     height: 600px;
     background: url('/a/6d06601e-9759-4775-9433-852f53d3c450') no-repeat center center;
     background-size: contain;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    position: relative;
-    box-sizing: border-box;
-    padding-top: 140px;
-}
-
-.loading-text {
-    font-size: 2.8rem;
-    color: #1a1a1a;
-    text-shadow: none;
-    animation: none;
 }
 
