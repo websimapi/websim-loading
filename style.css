@@ -5,41 +5,26 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    font-family: 'MedievalSharp', cursive;
-    color: #000000; /* Set a default text color */
+    font-family: 'Uncial Antiqua', cursive;
 }
 
 .loading-slab {
     width: 600px;
     height: 600px;
-    background-image: url("/a/cde37bd5-f423-4373-b738-8b6a4cd93f3e");
+    background: url('/a/6d06601e-9759-4775-9433-852f53d3c450') no-repeat center center;
     background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    box-sizing: border-box; /* Include padding in height calculation */
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+    box-sizing: border-box;
+    padding-top: 140px;
 }
-
-/* Remove pseudo-element used for the old stone effect */
-.loading-slab::before {
-    display: none;
-}
-
 
 .loading-text {
-    display: none;
+    font-size: 2.8rem;
+    color: #1a1a1a;
+    text-shadow: none;
+    animation: none;
 }
 
-@keyframes flicker {
-    0%, 100% {
-        opacity: 1;
-        transform: scale(1);
-    }
-    50% {
-        opacity: 0.95;
-        transform: scale(1.02);
-    }
-}
