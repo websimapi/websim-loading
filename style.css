@@ -6,41 +6,34 @@ body {
     height: 100vh;
     margin: 0;
     font-family: 'MedievalSharp', cursive;
+    color: #000000; /* Set a default text color */
 }
 
 .loading-slab {
-    width: 500px;
-    height: 200px;
-    background: radial-gradient(ellipse at center, #E3CBA7 0%, #D6B892 35%, #C4A484 60%, #8B6C4A 100%);
-    border: 3px solid #6E5033;
-    box-shadow: 
-        0 0 0 8px #5C4430,
-        inset 0 0 15px 5px #6E5033,
-        0 0 35px 10px #000;
-    border-radius: 4% 12% 6% 10% / 10% 5% 15% 8%; /* Creates uneven, rounded corners */
+    width: 600px;
+    height: 600px;
+    background-image: url("/a/cde37bd5-f423-4373-b738-8b6a4cd93f3e");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: flex-start;
     align-items: center;
-    position: relative;
-    overflow: hidden; /* Helps with the jagged effect */
+    padding-top: 130px; /* Position text from the top */
+    box-sizing: border-box; /* Include padding in height calculation */
 }
 
-/* A pseudo-element to create a more jagged/cracked border effect */
+/* Remove pseudo-element used for the old stone effect */
 .loading-slab::before {
-    content: '';
-    position: absolute;
-    top: -10px; right: -10px; bottom: -10px; left: -10px;
-    border: 2px solid #5C4430;
-    border-radius: 12% 6% 10% 4% / 5% 15% 8% 10%;
-    box-shadow: inset 0 0 10px #000;
-    pointer-events: none;
+    display: none;
 }
 
 
 .loading-text {
     font-size: 3rem;
-    color: #2A1E1E;
-    text-shadow: 1px 1px 0px #1F1B18, 2px 2px 3px rgba(0,0,0,0.5);
+    color: #000000; /* Black text to match the image */
+    text-shadow: none; /* Remove previous shadow */
     animation: flicker 2s infinite alternate;
 }
 
@@ -54,4 +47,3 @@ body {
         transform: scale(1.02);
     }
 }
-
